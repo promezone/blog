@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
 <head>
@@ -14,32 +14,35 @@ if (ctld != ".com") {
 };
 //]]></script>
 <title><data:blog.pageTitle/></title>
-&lt;style type=&quot;text/css&quot;&gt;&lt;!-- /*<b:skin><![CDATA[*/a{color:#777;text-decoration:none;font-family:Trebuchet MS;text-transform:uppercase;}
+&lt;style type=&quot;text/css&quot;&gt;&lt;!-- /*<b:skin><![CDATA[*/a{color:#ddd;text-decoration:none;font-family:Trebuchet MS;}
 a:hover{color:#fff;}
 
-body{background:#000;align-items:center;color:#fff;display:flex;flex-wrap:wrap;justify-content:center;font-family:Trebuchet MS;margin:0;}
-
-div {width: 100%;}
+body{background:#000;color:#ccc;font-family:Trebuchet MS;margin:0;}
 
 h2 {display:none;}
 h3 {margin:0;text-align:center;}
 
+img {max-width:100%;height:auto!important;}
+
 ul {list-style-type: none;margin:0.5em;padding:0;}
 
 #content-wrapper{margin:5em 0 0 0;}
-#sidebar-wrapper{position:absolute;top:0;left:0;}
+#sidebar-wrapper{position:absolute;text-align:center;top:0;left:0;width:100%;}
 
 .widget-item-control{display:none;}
 
-.blog-pager{display:flex;left:0;position:absolute;top:0;margin:3em 0 0 0!important;width:100%;justify-content:center;}
+.blog-pager{text-align:center;}
 .blog-pager-newer-link{padding:0 1em 0 0}
-.date-posts{display:flex;flex-wrap:wrap;font-family:Trebuchet MS;justify-content:center;max-width:50em;}
-.date-outer{display:flex;justify-content:center;}
 
-.home-link{display:flex;margin:0 1em;}
+.date-posts{text-align:center;}
+.date-outer{margin:0 0 3em 0;}
 
-.post-body {margin:1em;}
-.post-outer{margin:1em;padding:0;}
+.home-link{margin:0 1em;}
+
+.jump-link {margin:0 0 0.5em 0;text-align:center;font-size:2em;}
+
+.post-body {margin:1% 20%;}
+.post-outer{margin:0;padding:0;}
 
 .blog-feeds{display:none;}
 .status-msg-body{display:none;}
@@ -57,7 +60,7 @@ ul {list-style-type: none;margin:0.5em;padding:0;}
 <div id='content-wrapper'>
   <div id='main-wrapper'>
   <b:section class='main' id='main' showaddelement='no'>
-    <b:widget id='Blog1' locked='true' title='Сообщения блога' type='Blog'>
+    <b:widget id='Blog1' locked='true' title='Сообщения блога' type='Blog' visible='true'>
       <b:includable id='main' var='top'>
   <b:if cond='!data:mobile'>
     <!-- posts -->
@@ -958,7 +961,7 @@ ul {list-style-type: none;margin:0.5em;padding:0;}
 
   <div id='sidebar-wrapper'>
   <b:section class='sidebar' id='sidebar' preferred='yes'>
-    <b:widget id='Label1' locked='false' title='#' type='Label'>
+    <b:widget id='Label1' locked='false' title='#' type='Label' visible='true'>
       <b:includable id='main'>
   <b:if cond='data:title != &quot;&quot;'>
     <h2><data:title/></h2>
